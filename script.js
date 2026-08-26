@@ -5,7 +5,7 @@
   var navToggle = document.getElementById("navToggle");
   var mainNav = document.getElementById("mainNav");
   var navLinks = document.querySelectorAll("[data-nav-link]");
-  var sections = ["home", "menu", "access"]
+  var sections = ["home", "menu", "access", "contact"]
     .map(function (id) { return document.getElementById(id); })
     .filter(Boolean);
 
@@ -117,5 +117,67 @@
     revealEls.forEach(function (el) { observer.observe(el); });
   } else {
     revealEls.forEach(function (el) { el.classList.add("is-visible"); });
+  }
+
+  /* ---- contact form validation ---- */
+  var contactForm = document.getElementById("contactForm");
+
+  if (contactForm) {
+    var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    var fields = {
+      name: {
+        input: document.getElementById("contactName"),
+        error: document.getElementById("contactNameError")
+      },
+      email: {
+        input: document.getElementById("contactEmail"),
+        error: document.getElementById("contactEmailError")
+      },
+      message: {
+        input: document.getElementById("contactMessage"),
+        error: document.getElementById("contactMessageError")
+      }
+    };
+
+    function setFieldError(field, message) {
+      field.input.classList.toggle("is-invalid", Boolean(message));
+      field.error.textContent = message || "";
+    }
+
+    function validateField(key) {
+      var field = fields[key];
+      var value = field.input.value.trim();
+
+      if (!value) {
+        setFieldError(field, "この項目は必須です。");
+        return false;
+      }
+
+      if (key === "email" && !emailPattern.test(value)) {
+        setFieldError(field, "メールアドレスの形式が正しくありません。");
+        return false;
+      }
+
+      setFieldError(field, "");
+      return true;
+    }
+
+    contactForm.addEventListener("submit", function (event) {
+      event.preventDefault();
+
+      var isValid = true;
+      Object.keys(fields).forEach(function (key) {
+        if (!validateField(key)) isValid = false;
+      });
+
+      if (!isValid) return;
+
+      alert("送信しました");
+      contactForm.reset();
+      Object.keys(fields).forEach(function (key) {
+        setFieldError(fields[key], "");
+      });
+    });
   }
 })();
