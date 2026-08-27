@@ -4,268 +4,86 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CAFÉ MORI | 森にひそむ、一杯のやすらぎ</title>
-  <meta name="description" content="CAFÉ MORI（カフェ・モリ）は、木漏れ日が差し込む店内で自家焙煎コーヒーを味わえる隠れ家カフェです。">
+  <title>O O O O | 自己紹介</title>
+  <meta name="description" content="O O O Oの自己紹介ページです。">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,600;1,9..144,400&family=Shippori+Mincho+B1:wght@500;600;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-  <a class="skip-link" href="#home">本文へ移動</a>
-
-  <header class="site-header" id="siteHeader">
-    <div class="header-inner">
-      <a href="#home" class="brand" data-nav-link>
-        <span class="brand-mark" aria-hidden="true">
-          <svg viewBox="0 0 48 48" width="30" height="30">
-            <path d="M24 4c8 6 14 14 14 22a14 14 0 0 1-28 0C10 18 16 10 24 4Z" fill="none" stroke="currentColor"
-              stroke-width="2" />
-            <path d="M24 44V24" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
-            <path d="M24 30c-3-1-6-3-7-6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" fill="none" />
-            <path d="M24 26c3-1 5-3 6-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" fill="none" />
-          </svg>
-        </span>
-        <span class="brand-word">CAFÉ MORI</span>
-      </a>
-
-      <nav class="main-nav" id="mainNav" aria-label="主要ナビゲーション">
-        <ul>
-          <li><a href="#home" data-nav-link data-target="home">ホーム</a></li>
-          <li><a href="#menu" data-nav-link data-target="menu">メニュー</a></li>
-          <li><a href="#access" data-nav-link data-target="access">アクセス</a></li>
-          <li><a href="#contact" data-nav-link data-target="contact">お問い合わせ</a></li>
-        </ul>
-      </nav>
-
-      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mainNav" aria-label="メニューを開く">
-        <span></span><span></span><span></span>
-      </button>
+  <!-- プロフィールセクション -->
+  <main class="profile">
+    <div class="profile__intro reveal">
+      <div class="profile__avatar" aria-hidden="true">森</div>
+      <h1 class="profile__name">モリカワタケシ</h1>
+      <p class="profile__title">Web デザイナー / エンジニア</p>
+      <p class="profile__bio">
+        はじめまして。Web制作を学びながら、シンプルで使いやすいデザインを心がけて活動しています。
+        新しい技術に触れることが好きで、日々学びを深めています。
+      </p>
     </div>
-  </header>
 
-  <main>
-
-    <section class="hero" id="home">
-      <div class="hero-canopy" aria-hidden="true">
-        <span class="dapple d1"></span>
-        <span class="dapple d2"></span>
-        <span class="dapple d3"></span>
-        <span class="dapple d4"></span>
-      </div>
-
-      <div class="hero-inner">
-        <p class="eyebrow">KOMOREBI COFFEE ROASTERS</p>
-        <h1 class="hero-title">
-          CAFÉ MORI
-        </h1>
-        <p class="hero-tagline">森にひそむ、一杯のやすらぎ。</p>
-        <p class="hero-desc">
-          木漏れ日が差し込む小さな店内で、自家焙煎の一杯とともに時間を忘れる。<br class="br-desktop">
-          都会の真ん中にある、森の入り口のようなカフェです。
-        </p>
-        <div class="hero-actions">
-          <a href="#menu" class="btn btn-primary" data-nav-link data-target="menu">メニューを見る</a>
-          <a href="#access" class="btn btn-ghost" data-nav-link data-target="access">アクセス情報</a>
-        </div>
-      </div>
-
-      <a href="#menu" class="scroll-cue" data-nav-link data-target="menu" aria-label="メニューへスクロール">
-        <span class="scroll-cue-line" aria-hidden="true"></span>
-        <span>SCROLL</span>
-      </a>
+    <!-- スキル・興味セクション -->
+    <section class="skills reveal">
+      <h2 class="skills__heading">スキル・興味</h2>
+      <ul class="skills__list">
+        <li class="skills__item">HTML / CSS</li>
+        <li class="skills__item">JavaScript</li>
+        <li class="skills__item">UI / UX デザイン</li>
+        <li class="skills__item">写真撮影</li>
+      </ul>
     </section>
 
-    <section class="menu" id="menu">
-      <div class="section-inner">
-        <p class="eyebrow eyebrow-dark">MENU</p>
-        <h2 class="section-title">森の恵みを、カップの中に。</h2>
-        <p class="section-lead">
-          豆は月替わりで数種の産地から厳選し、当店の焙煎機で少量ずつ丁寧に焼き上げています。
-        </p>
-
-        <div class="menu-groups">
-
-          <article class="menu-group reveal">
-            <h3 class="menu-group-title">
-              <span class="menu-group-title-jp">定番コーヒー</span>
-              <span class="menu-group-title-en">Signature Coffee</span>
-            </h3>
-            <ul class="menu-list">
-              <li class="menu-item">
-                <div class="menu-item-name">森のブレンド<span class="menu-item-note">当店定番・中深煎り</span></div>
-                <div class="menu-item-dots" aria-hidden="true"></div>
-                <div class="menu-item-price">¥580</div>
-              </li>
-              <li class="menu-item">
-                <div class="menu-item-name">木漏れ日ラテ<span class="menu-item-note">エスプレッソ&nbsp;×&nbsp;ミルク</span></div>
-                <div class="menu-item-dots" aria-hidden="true"></div>
-                <div class="menu-item-price">¥620</div>
-              </li>
-              <li class="menu-item">
-                <div class="menu-item-name">水出しアイスコーヒー<span class="menu-item-note">12時間低温抽出</span></div>
-                <div class="menu-item-dots" aria-hidden="true"></div>
-                <div class="menu-item-price">¥600</div>
-              </li>
-              <li class="menu-item">
-                <div class="menu-item-name">カフェオレ・ノワゼット<span class="menu-item-note">ヘーゼルナッツ香る一杯</span></div>
-                <div class="menu-item-dots" aria-hidden="true"></div>
-                <div class="menu-item-price">¥650</div>
-              </li>
-            </ul>
-          </article>
-
-          <article class="menu-group reveal">
-            <h3 class="menu-group-title">
-              <span class="menu-group-title-jp">季節限定</span>
-              <span class="menu-group-title-en">Seasonal</span>
-            </h3>
-            <ul class="menu-list">
-              <li class="menu-item">
-                <div class="menu-item-name">栗と胡桃のモンブランラテ<span class="menu-item-note">秋限定</span></div>
-                <div class="menu-item-dots" aria-hidden="true"></div>
-                <div class="menu-item-price">¥780</div>
-              </li>
-              <li class="menu-item">
-                <div class="menu-item-name">柚子とはちみつのカフェソーダ<span class="menu-item-note">数量限定</span></div>
-                <div class="menu-item-dots" aria-hidden="true"></div>
-                <div class="menu-item-price">¥690</div>
-              </li>
-              <li class="menu-item">
-                <div class="menu-item-name">森のハーブティー<span class="menu-item-note">杉と柑橘のブレンド</span></div>
-                <div class="menu-item-dots" aria-hidden="true"></div>
-                <div class="menu-item-price">¥640</div>
-              </li>
-            </ul>
-          </article>
-
-          <article class="menu-group reveal">
-            <h3 class="menu-group-title">
-              <span class="menu-group-title-jp">フード</span>
-              <span class="menu-group-title-en">Food</span>
-            </h3>
-            <ul class="menu-list">
-              <li class="menu-item">
-                <div class="menu-item-name">木の実のグラノーラバウル<span class="menu-item-note">自家製ヨーグルト添え</span></div>
-                <div class="menu-item-dots" aria-hidden="true"></div>
-                <div class="menu-item-price">¥820</div>
-              </li>
-              <li class="menu-item">
-                <div class="menu-item-name">焼き立てバタースコーン<span class="menu-item-note">2個・季節のジャム付き</span></div>
-                <div class="menu-item-dots" aria-hidden="true"></div>
-                <div class="menu-item-price">¥550</div>
-              </li>
-              <li class="menu-item">
-                <div class="menu-item-name">森のキッシュ・プレート<span class="menu-item-note">季節野菜とチーズ</span></div>
-                <div class="menu-item-dots" aria-hidden="true"></div>
-                <div class="menu-item-price">¥980</div>
-              </li>
-            </ul>
-          </article>
-
-        </div>
-      </div>
+    <!-- ワークセクション -->
+    <section class="works reveal">
+      <h2 class="works__heading">ワーク</h2>
+      <ul class="works__grid">
+        <li class="works__item">
+          <div class="works__thumbnail" aria-hidden="true"></div>
+          <p class="works__title">Work Title 01</p>
+        </li>
+        <li class="works__item">
+          <div class="works__thumbnail" aria-hidden="true"></div>
+          <p class="works__title">Work Title 02</p>
+        </li>
+        <li class="works__item">
+          <div class="works__thumbnail" aria-hidden="true"></div>
+          <p class="works__title">Work Title 03</p>
+        </li>
+        <li class="works__item">
+          <div class="works__thumbnail" aria-hidden="true"></div>
+          <p class="works__title">Work Title 04</p>
+        </li>
+      </ul>
     </section>
 
-    <section class="access" id="access">
-      <div class="section-inner access-inner">
-        <div class="access-info reveal">
-          <p class="eyebrow eyebrow-light">ACCESS</p>
-          <h2 class="section-title section-title-light">森の入り口は、駅のすぐそばに。</h2>
-
-          <dl class="info-list">
-            <div class="info-row">
-              <dt>住所</dt>
-              <dd>〒166-0001<br>東京都杉並区木々町3-15-2 モリノビル1F</dd>
-            </div>
-            <div class="info-row">
-              <dt>電話</dt>
-              <dd>03-1234-5678</dd>
-            </div>
-            <div class="info-row">
-              <dt>営業時間</dt>
-              <dd>8:00 〜 19:00（L.O. 18:30）<br>無休（年末年始を除く）</dd>
-            </div>
-            <div class="info-row">
-              <dt>アクセス</dt>
-              <dd>森下ヶ丘駅 北口より徒歩4分<br>緑道沿い、大きな楠の木が目印です</dd>
-            </div>
-          </dl>
-        </div>
-
-        <div class="access-map reveal" aria-hidden="true">
-          <svg viewBox="0 0 400 460" class="map-illustration" role="img" aria-label="店舗周辺の簡易マップイラスト">
-            <rect x="0" y="0" width="400" height="460" fill="none" />
-            <path d="M0 120 H400" class="map-road" />
-            <path d="M0 300 H400" class="map-road" />
-            <path d="M140 0 V460" class="map-road map-road-v" />
-            <circle cx="140" cy="120" r="4" class="map-node" />
-            <g class="map-station" transform="translate(40,60)">
-              <rect x="0" y="0" width="80" height="40" rx="6" />
-              <text x="40" y="25" text-anchor="middle">森下ヶ丘駅</text>
-            </g>
-            <g class="map-trees">
-              <circle cx="250" cy="200" r="22" />
-              <circle cx="285" cy="230" r="16" />
-              <circle cx="230" cy="245" r="14" />
-              <circle cx="300" cy="180" r="12" />
-            </g>
-            <g class="map-pin" transform="translate(210,255)">
-              <path d="M0 0C0 -22 22 -22 22 0C22 14 11 30 11 34C11 30 0 14 0 0Z" />
-              <circle cx="11" cy="0" r="5" class="map-pin-dot" />
-            </g>
-            <text x="120" y="270" class="map-label">CAFÉ MORI</text>
-          </svg>
-        </div>
-      </div>
+    <!-- 連絡先セクション -->
+    <section class="contact reveal">
+      <h2 class="contact__heading">連絡先</h2>
+      <ul class="contact__list">
+        <li class="contact__item">
+          <a class="contact__link" href="mailto:example@example.com">example@example.com</a>
+        </li>
+        <li class="contact__item">
+          <a class="contact__link" href="https://x.com/example" target="_blank" rel="noopener noreferrer">X (Twitter)</a>
+        </li>
+        <li class="contact__item">
+          <a class="contact__link" href="https://github.com/example" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </li>
+      </ul>
     </section>
-
-    <section class="contact" id="contact">
-      <div class="section-inner contact-inner">
-        <p class="eyebrow eyebrow-light">CONTACT</p>
-        <h2 class="section-title section-title-light">お問い合わせ</h2>
-        <p class="section-lead section-lead-light">
-          ご予約やご質問など、お気軽にこちらのフォームからご連絡ください。
-        </p>
-
-        <form class="contact-form reveal" id="contactForm" novalidate>
-          <div class="form-group">
-            <label class="form-label" for="contactName">お名前</label>
-            <input class="form-input" type="text" id="contactName" name="name" autocomplete="name">
-            <p class="form-error" id="contactNameError" role="alert" aria-live="polite"></p>
-          </div>
-
-          <div class="form-group">
-            <label class="form-label" for="contactEmail">メールアドレス</label>
-            <input class="form-input" type="email" id="contactEmail" name="email" autocomplete="email">
-            <p class="form-error" id="contactEmailError" role="alert" aria-live="polite"></p>
-          </div>
-
-          <div class="form-group">
-            <label class="form-label" for="contactMessage">お問い合わせ内容</label>
-            <textarea class="form-input form-textarea" id="contactMessage" name="message" rows="5"></textarea>
-            <p class="form-error" id="contactMessageError" role="alert" aria-live="polite"></p>
-          </div>
-
-          <button type="submit" class="btn btn-primary form-submit">送信する</button>
-        </form>
-      </div>
-    </section>
-
   </main>
 
-  <footer class="site-footer">
-    <div class="footer-inner">
-      <span class="footer-brand">CAFÉ MORI</span>
-      <span class="footer-copy">&copy; 2026 CAFÉ MORI. All rights reserved.</span>
-    </div>
+  <!-- フッター -->
+  <footer class="footer">
+    <p class="footer__text">&copy; 2026 O O O O</p>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="script.js" defer></script>
+
 </body>
 
 </html>
