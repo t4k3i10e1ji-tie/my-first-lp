@@ -113,6 +113,12 @@ body {
   border-radius: 999px; /* ピル形状のタグ */
   padding: 6px 16px;
   font-size: 14px;
+  transition: background-color .2s ease, color .2s ease; /* ホバー時の色変化をなめらかにする */
+}
+
+.skills__item:hover {
+  background-color: var(--color-accent); /* ホバー時の背景色 */
+  color: var(--color-surface); /* ホバー時の文字色 */
 }
 
 /* ==========================================================================
@@ -183,6 +189,21 @@ body {
 
 .contact__link:hover {
   text-decoration: underline; /* ホバー時のみ下線を表示 */
+}
+
+/* ==========================================================================
+   .reveal ブロック（スクロールでふわっと浮かび上がる演出）
+   ========================================================================== */
+
+.reveal {
+  opacity: 0; /* 初期状態は非表示 */
+  transform: translateY(20px); /* 初期状態は少し下にずらしておく */
+  transition: opacity .6s ease, transform .6s ease; /* ふわっと浮かび上がる動き */
+}
+
+.reveal--visible {
+  opacity: 1; /* 表示状態 */
+  transform: translateY(0); /* 元の位置に戻す */
 }
 
 /* ==========================================================================
