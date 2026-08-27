@@ -38,6 +38,7 @@
           <li><a href="#home" data-nav-link data-target="home">ホーム</a></li>
           <li><a href="#menu" data-nav-link data-target="menu">メニュー</a></li>
           <li><a href="#access" data-nav-link data-target="access">アクセス</a></li>
+          <li><a href="#contact" data-nav-link data-target="contact">お問い合わせ</a></li>
         </ul>
       </nav>
 
@@ -220,6 +221,38 @@
             <text x="120" y="270" class="map-label">CAFÉ MORI</text>
           </svg>
         </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="section-inner contact-inner">
+        <p class="eyebrow eyebrow-light">CONTACT</p>
+        <h2 class="section-title section-title-light">お問い合わせ</h2>
+        <p class="section-lead section-lead-light">
+          ご予約やご質問など、お気軽にこちらのフォームからご連絡ください。
+        </p>
+
+        <form class="contact-form reveal" id="contactForm" novalidate>
+          <div class="form-group">
+            <label class="form-label" for="contactName">お名前</label>
+            <input class="form-input" type="text" id="contactName" name="name" autocomplete="name">
+            <p class="form-error" id="contactNameError" role="alert" aria-live="polite"></p>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="contactEmail">メールアドレス</label>
+            <input class="form-input" type="email" id="contactEmail" name="email" autocomplete="email">
+            <p class="form-error" id="contactEmailError" role="alert" aria-live="polite"></p>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="contactMessage">お問い合わせ内容</label>
+            <textarea class="form-input form-textarea" id="contactMessage" name="message" rows="5"></textarea>
+            <p class="form-error" id="contactMessageError" role="alert" aria-live="polite"></p>
+          </div>
+
+          <button type="submit" class="btn btn-primary form-submit">送信する</button>
+        </form>
       </div>
     </section>
 

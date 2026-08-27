@@ -541,6 +541,89 @@ ul { list-style: none; }
 }
 
 /* ==========================================================================
+   Contact
+   ========================================================================== */
+
+.contact {
+  background: var(--roast-deep);
+}
+
+.contact-inner {
+  max-width: 640px;
+}
+
+.section-lead-light {
+  color: var(--milk-soft);
+}
+
+.contact-form {
+  margin-top: 2.6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-label {
+  font-family: var(--font-jp);
+  font-weight: 600;
+  font-size: 0.86rem;
+  color: var(--dapple);
+  letter-spacing: 0.06em;
+}
+
+.form-input {
+  width: 100%;
+  background: rgba(244, 236, 219, 0.06);
+  border: 1px solid rgba(244, 236, 219, 0.2);
+  border-radius: 8px;
+  padding: 0.85rem 1rem;
+  color: var(--milk);
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  transition: border-color 0.25s var(--ease), background-color 0.25s var(--ease);
+}
+
+.form-input::placeholder {
+  color: rgba(244, 236, 219, 0.4);
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: var(--ember-bright);
+  background: rgba(244, 236, 219, 0.1);
+}
+
+.form-input.is-invalid {
+  border-color: #d97a6c;
+}
+
+.form-textarea {
+  resize: vertical;
+  min-height: 9rem;
+  line-height: 1.7;
+}
+
+.form-error {
+  min-height: 1.2em;
+  font-size: 0.8rem;
+  color: #e79c8f;
+  letter-spacing: 0.02em;
+}
+
+.form-submit {
+  align-self: flex-start;
+  margin-top: 0.6rem;
+  border: none;
+  cursor: pointer;
+}
+
+/* ==========================================================================
    Footer
    ========================================================================== */
 
