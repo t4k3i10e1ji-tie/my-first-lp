@@ -116,6 +116,42 @@ body {
 }
 
 /* ==========================================================================
+   .works ブロック（ワークセクション）
+   ========================================================================== */
+
+.works {
+  margin-top: var(--space-lg);
+  padding-top: var(--space-lg);
+  border-top: 1px solid var(--color-border); /* セクション区切りの線 */
+  text-align: left;
+}
+
+.works__heading {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: var(--space-sm);
+}
+
+.works__grid {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2列のグリッド */
+  gap: var(--space-sm);
+}
+
+.works__thumbnail {
+  aspect-ratio: 4 / 3; /* サムネイルのプレースホルダー比率 */
+  border-radius: 8px; /* 角丸 */
+  background-color: var(--color-border); /* 画像未設定を示すプレースホルダー色 */
+}
+
+.works__title {
+  margin-top: var(--space-sm);
+  font-size: 14px;
+  color: var(--color-text-sub);
+}
+
+/* ==========================================================================
    .contact ブロック（連絡先セクション）
    ========================================================================== */
 
@@ -174,5 +210,9 @@ body {
 
   .profile__name {
     font-size: 24px;
+  }
+
+  .works__grid {
+    grid-template-columns: 1fr; /* スマホでは1列に切り替え */
   }
 }
